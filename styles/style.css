@@ -154,7 +154,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   max-height: 80px;
 }
+.leftPanelInfo .leftTask h2 {
+  margin-top: 20px;
+}
 
+.nawBar {
+  margin-left: 30px;
+  margin-top: 31px;
+}
+.nawBar h5 {
+  margin-bottom: 18px;
+}
 .nawBar ul {
   list-style: none;
 }
@@ -167,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nawBar li {
   margin-right: 5px;
+  margin-bottom: 16px;
 }
 
 .rightPanel {
@@ -196,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-wrap: wrap;
   background-color: #FFFFFF;
-  max-width: 1170px;
+  min-width: 1170px;
   min-height: 136px;
 }
 .rightPanel .head .pic0 {
@@ -251,17 +262,50 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 1 10px;
 }
 .rightPanel .frontSpase {
-  display: flex;
-  flex-direction: row;
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 220px;
   width: 730px;
   height: 591px;
   background-color: white;
   border-radius: 8px;
 }
+.rightPanel .frontSpase .today {
+  margin-left: 30px;
+  padding-top: 35px;
+}
+.rightPanel .frontSpase .pic0 {
+  width: 12px;
+  height: 9px;
+}
+.rightPanel .frontSpase .message_0, .rightPanel .frontSpase .message_1, .rightPanel .frontSpase .message_3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightPanel .frontSpase .message_0 h3, .rightPanel .frontSpase .message_1 h3, .rightPanel .frontSpase .message_3 h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 461px;
+  max-height: 40px;
+}
+.rightPanel .frontSpase .message_0 .message_2, .rightPanel .frontSpase .message_1 .message_2, .rightPanel .frontSpase .message_3 .message_2 {
+  max-width: 551px;
+  max-height: 88px;
+  background: #F7F6F3;
+  border-radius: 10px;
+}
+.rightPanel .frontSpase .message_0 img, .rightPanel .frontSpase .message_1 img, .rightPanel .frontSpase .message_3 img {
+  width: 12px;
+  height: 10px;
+  background: #CEF9C6;
+}
+.rightPanel .frontSpase .img0 {
+  margin-left: 90px;
+}
 .rightPanel .frontSpase .img0, .rightPanel .frontSpase .img1, .rightPanel .frontSpase .img2, .rightPanel .frontSpase .img3 {
   width: 100px;
   height: 100px;
   border-radius: 8px;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
