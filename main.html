@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <meta charset="UTF-8">
         <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,31 +14,31 @@
         <div class="leftPanel">
 
             <div class="leftPanelTop">
-                <img src="assets/Logo@3x.svg" alt="Logo_proj">
-                <h3>PROJECTUS</h3>
-                <img class="search" src="assets/Search@3x.svg" alt="Search">
+                <i class="logo"></i>
+                <h1>PROJECTUS</h1>
+                <i class="search"></i>
             </div>
 
             <div class="leftPanelInfo"> 
                 <img src="assets/test.png" alt="avatar">
-                <h4>Eduard Protsenko</h4>
-                <h5>Student</h5>
+                <p id="name">Dmytro Gordon<br>
+                <span id="who">Porno star</span></p>
                 <button></button>
             </div>
 
             <div class="leftTask">
-                <h2>372</h2>
-                <h2>11</h2>
-                <h5>Completed Task</h5>
-                <h5>Open Task</h5>
+                <p id='completedTask'>372</p>
+                <p id='openTask'>11</p>
+                <p id='completed'>Completed Task</p>
+                <p id='open'>Open Task</p>
             </div>
 
             <div class="nawBar">
-                <h5>MENU</h5>
+                <h2>MENU</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Tasks</a></li>
-                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Notifications<button>3</button></a></li>
                 </ul>
             </div>
         </div>
@@ -46,21 +46,26 @@
         <div class="rightPanel">
 
             <div class="head">
-                <img class="pic0" src="assets/Shapes@2x.png" alt="Shapes">
-                <h1>Website Redesign</h1>
-                <button class="settings"></button>
-                <button class="pic1"><img src="assets/test.png" alt="pic1"></button>
-                <button class="pic2"><img src="assets/test.png" alt="pic2"></button>
-                <button class="pic3"><img src="assets/test.png" alt="pic3"></button>
-                <button class="share">Sare</button>
-                <button class="chat">Chat<img src="assets/Combined Shape@1x.svg" alt="message"></button>
+                <div class="top">
+                    <i class="headLogo"></i>
+                    <h3>Website Redesign</h3>
+                    <button class="settings"></button>
+                    <div class="users">
+                        <img src="assets/ilon.jpg" alt="pic1">
+                        <img src="assets/pig.jpg" alt="pic2">
+                        <img src="assets/Ze.jpg" alt="pic3">
+                    </div>
+                    <button class="share">Sare</button>
+                    <button class="chat">Chat</button>
+                </div>
+
                 <nav>
                     <ul>
-                    <li><a href="">Tasks</a></li>
-                    <li><a href="">Kanban</a></li>
-                    <li><a href="">Activity</a></li>
-                    <li><a href="">Calendar</a></li>
-                    <li><a href="">Files</a></li>
+                        <li><a class="link" href="#">Tasks</a></li>
+                        <li><a class="link" href="#">Kanban</a></li>
+                        <li><a class="link active" href="#">Activity</a></li>
+                        <li><a class="link" href="#">Calendar</a></li>
+                        <li><a class="link" href="#">Files</a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,33 +73,34 @@
             <div class="frontSpase">
                 <h4 class="today">TODAY</h4>
                 <div class="message_0">
-                    <img src="assets/Icon@3x.svg" alt="check">
-                    <h3>Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users</h3>
-                    <h4>8:40 PM</h4>
+                    <i></i>
+                    <p>Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users</p>
+                    <p class="time0">8:40 PM</p>
                 </div>
                 
                 <div class="message_1">
-                    <img src="assets/message.png" alt="message">
-                    <h3>Emilee Simchenko commented on Account for teams and personal in bottom style</h3>
-                    <h4>7:32 PM</h4>
+                    <i></i>
+                    <p>Emilee Simchenko commented on Account for teams and personal in bottom style</p>
+                    <p class="time1">7:32 PM</p>
                 </div>
                 
                 <div class="message_2">
-                    <h3>During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes</h3>
+                    <p>During a project build, it is necessary to evaluate the product design
+                     and development against project requirements and outcomes</p>
                 </div>
                
                 <div class="message_3">
-                    <img src="assets/download.png" alt="download">
-                    <h3>Darika Samak uploaded 4 files on An option to search in current projects or in all projects</h3>
-                    <h4>6:02 PM</h4>
+                    <i></i>
+                    <p>Darika Samak uploaded 4 files on An option to search in current projects or in all projects</p>
+                    <p class="time3">6:02 PM</p>
                 </div>
 
-                
                 <img class="img0" src="assets/Lada.jpg" alt="lada">
                 <img class="img1" src="assets/cat.jpeg" alt="cat">
                 <img class="img2" src="assets/1.jpg" alt="autumn">
                 <img class="img3" src="assets/guss.jpg" alt="guss">
             </div>
         </div>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
