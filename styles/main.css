@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1440px;
   height: 100vh;
   margin: auto;
   background-color: #222222;
@@ -312,18 +311,25 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   color: #FFFFFF;
   line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.page .nawBar li a button {
-  margin-left: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #FFC200;
-  font-family: Helvetica;
+.page .nawBar li a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 13px;
   color: #131313;
-  text-align: center;
+  background: #FFC200;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
 }
 
 .page .rightPanel {
@@ -510,6 +516,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #131313;
   text-align: right;
   line-height: 20px;
+  margin-right: 30px;
 }
 
 .page .rightPanel .frontSpase p {
@@ -517,6 +524,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   color: #131313;
   line-height: 20px;
+  margin-right: auto;
 }
 
 .page .rightPanel .frontSpase .message_0, .page .rightPanel .frontSpase .message_1, .page .rightPanel .frontSpase .message_3 {
@@ -575,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: #CEF9C6;
+  background-color: #FFF8DD;
   position: relative;
 }
 
@@ -623,7 +631,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: #CEF9C6;
+  background-color: #E3EFFF;
   position: relative;
 }
 
@@ -708,7 +716,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 5px;
   }
   .page .rightPanel .head .top i {
-    margin-left: 15px;
+    margin-left: 12px;
   }
   .page .rightPanel .head .top h3 {
     width: 75%;

@@ -16,6 +16,7 @@
   color: #131313;
   text-align: right;
   line-height: 20px;
+  margin-right: 30px;
 }
 
 .frontSpase p {
@@ -23,6 +24,7 @@
   font-size: 16px;
   color: #131313;
   line-height: 20px;
+  margin-right: auto;
 }
 
 .frontSpase .message_0, .frontSpase .message_1, .frontSpase .message_3 {
@@ -81,7 +83,7 @@
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: #CEF9C6;
+  background-color: #FFF8DD;
   position: relative;
 }
 
@@ -129,7 +131,7 @@
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: #CEF9C6;
+  background-color: #E3EFFF;
   position: relative;
 }
 

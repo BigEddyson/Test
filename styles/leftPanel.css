@@ -171,17 +171,24 @@
   font-size: 14px;
   color: #FFFFFF;
   line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.nawBar li a button {
-  margin-left: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #FFC200;
-  font-family: Helvetica;
+.nawBar li a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 13px;
   color: #131313;
-  text-align: center;
+  background: #FFC200;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=leftPanel.css.map */
