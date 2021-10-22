@@ -287,6 +287,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
 }
 
+.page .leftTask #completed {
+  cursor: pointer;
+}
+
 .page .nawBar {
   margin-left: 30px;
   margin-top: 31px;
@@ -648,15 +652,16 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 14px;
 }
 
-.page .rightPanel .frontSpase .img0 {
-  margin-left: 90px;
-}
-
-.page .rightPanel .frontSpase .img0, .page .rightPanel .frontSpase .img1, .page .rightPanel .frontSpase .img2, .page .rightPanel .frontSpase .img3 {
+.page .rightPanel .frontSpase #imgs img {
   width: 100px;
   height: 100px;
   border-radius: 8px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.page .rightPanel .frontSpase #imgs img:first-child {
+  margin-left: 90px;
 }
 
 @media screen and (max-width: 700px) {

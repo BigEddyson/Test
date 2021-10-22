@@ -148,15 +148,16 @@
   background-size: 14px;
 }
 
-.frontSpase .img0 {
-  margin-left: 90px;
-}
-
-.frontSpase .img0, .frontSpase .img1, .frontSpase .img2, .frontSpase .img3 {
+.frontSpase #imgs img {
   width: 100px;
   height: 100px;
   border-radius: 8px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.frontSpase #imgs img:first-child {
+  margin-left: 90px;
 }
 
 @media screen and (max-width: 700px) {

@@ -314,15 +314,16 @@
   background-size: 14px;
 }
 
-.rightPanel .frontSpase .img0 {
-  margin-left: 90px;
-}
-
-.rightPanel .frontSpase .img0, .rightPanel .frontSpase .img1, .rightPanel .frontSpase .img2, .rightPanel .frontSpase .img3 {
+.rightPanel .frontSpase #imgs img {
   width: 100px;
   height: 100px;
   border-radius: 8px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.rightPanel .frontSpase #imgs img:first-child {
+  margin-left: 90px;
 }
 
 @media screen and (max-width: 700px) {
