@@ -1,5 +1,5 @@
 <template lang="pug">
-.leftPanel
+.sidebar
   .leftPanelTop
     i.logo
     h1 PROJECTUS
@@ -11,11 +11,11 @@
       br
       span#who Porno star
     button
-  .leftTask(@click="openPopup()")
-    p.compTaskEvent#completedTask {{completedTask}}
-    p#openTask {{openTask}}
-    p.compTaskEvent#completed Completed Task
-    p#open Open Task
+  .leftTask
+    p.compTaskEvent#completedTask(@click="openPopup()") {{completedTask}}
+    p#openTask(@click="openTasks()") {{openTask}}
+    p.compTaskEvent#completed(@click="openPopup()") Completed Task
+    p#open(@click="openTasks()") Open Task
   .nawBar
     h2 MENU
     ul
@@ -32,7 +32,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'LeftPanel',
+  name: 'SideBar',
   props: {
     notifiCounter: {
       type: Number,
@@ -53,13 +53,18 @@ export default defineComponent({
           this.openTask = this.openTask - 1
         }
       }
+    },
+    openTasks () {
+      if (this.openTask > 0) {
+        this.$router.push({ path: '/tasks' })
+      }
     }
   }
 })
 </script>
 
 <style scoped lang="scss">
-  .leftPanel{
+  .sidebar{
     display: flex;
     flex-direction: column;
     background-color: black;
